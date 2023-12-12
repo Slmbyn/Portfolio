@@ -1,4 +1,11 @@
-:root {
+/* Here is where you put:
+1. element selectors
+2. media queries
+3. global pseudo selectors (like :root)
+4. class selectors for all components to use
+ */
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -104,4 +111,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */

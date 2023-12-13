@@ -17,6 +17,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Selam&apos;s Portfolio</h1>
+      <Image
+                src="/headshot.png"
+                alt="My Headshot"
+                // if you do use next Image -- hard coded width and height is required (makes responsivness hard)
+                width={200}
+                height={200}
+            />
+      <h2>About Me:</h2>
+      <p>I’m a methodically-minded software engineer and options trader, with an aptitude for efficient processes and function. My experiences prior to entering the software engineering field have helped me enhance my skills in detail-oriented work, process development and rapid learning in fast paced environments. My goal as a software engineer is to leverage my experiences alongside my technical expertise to support a team with a shared commitment to fostering positive community impact.
+      <h2>Projects:</h2>
+      <h2>Contact Me:</h2>
+</p>
     </>
   )
 }  

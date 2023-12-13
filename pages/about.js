@@ -18,10 +18,10 @@ export default function About() {
                 }
                 `}
             </style>
-            <p className="fontSize">This is my brand statement</p>
+            {/* <p className="fontSize">This is my brand statement</p>
 
             <button onClick={() => setFontSize(fontSize + 1)}> BIGGER!</button>
-            <button onClick={() => setFontSize(fontSize - 1)}> smaller!</button>
+            <button onClick={() => setFontSize(fontSize - 1)}> smaller!</button> */}
 
             <Image
                 src="/headshot.png"

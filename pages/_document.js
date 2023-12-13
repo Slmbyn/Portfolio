@@ -6,7 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       {/* page layout that effects ALL urls can be placed here */}
-      <Navbar />
+      {/* <Navbar /> */}
       <body>
         <Main />
         <NextScript />

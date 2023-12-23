@@ -23,6 +23,7 @@ export default function Home() {
 
       {/* About Me Section */}
       <section className="container my-5">
+            <h2>About Me:</h2>
         <div className="row">
           <div className="col-md-6">
             <Image
@@ -33,9 +34,8 @@ export default function Home() {
             />
           </div>
           <div className="col-md-6">
-            <h2>About Me:</h2>
             <p>
-              I’m a methodically-minded software engineer and options trader, with an aptitude for efficient processes and function. My experiences prior to entering the software engineering field have helped me enhance my skills in detail-oriented work, process development, and rapid learning in fast-paced environments. My goal as a software engineer is to leverage my experiences alongside my technical expertise to support a team with a shared commitment to fostering positive community impact.
+              Im a methodically-minded software engineer and options trader, with an aptitude for efficient processes and function. My experiences prior to entering the software engineering field have helped me enhance my skills in detail-oriented work, process development, and rapid learning in fast-paced environments. My goal as a software engineer is to leverage my experiences alongside my technical expertise to support a team with a shared commitment to fostering positive community impact.
             </p>
           </div>
         </div>
@@ -44,7 +44,55 @@ export default function Home() {
       {/* Projects Section */}
       <section className="bg-light container py-5">
         <h2>Projects:</h2>
-        {/* Add your project content here */}
+        {/* STRATTESTER CARD */}
+        <a
+          href="https://github.com/Slmbyn/StratTester"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card mx-auto card-hover"
+          style={{ maxWidth: '400px' }}
+        >
+                    <Image
+            src="/strattester.png"
+            alt="Project Pic"
+            className="card-img-top"
+            width={200}
+            height={200}
+            layout="responsive"
+            objectFit="cover"
+          />
+          <div className="card-body">
+            <h5 className="card-title">Strat-tester</h5>
+            <p className="card-text">
+              Tech Stack: Django, React, React-Bootstrap
+            </p>
+          </div>
+        </a>
+
+        {/*  CARD */}
+        <a
+          href="https://github.com/Slmbyn/StratTester"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card mx-auto card-hover"
+          style={{ maxWidth: '400px' }}
+        >
+                    <Image
+            src="/strattester.png"
+            alt="Project Pic"
+            className="card-img-top"
+            width={200}
+            height={200}
+            layout="responsive"
+            objectFit="cover"
+          />
+          <div className="card-body">
+            <h5 className="card-title">Strat-tester</h5>
+            <p className="card-text">
+              Tech Stack: Django, React, React-Bootstrap
+            </p>
+          </div>
+        </a>
       </section>
 
       {/* Contact Me Section */}

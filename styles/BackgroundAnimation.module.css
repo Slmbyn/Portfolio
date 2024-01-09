@@ -1,0 +1,16 @@
+/* BackgroundAnimation.module.css */
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :global(canvas) {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+  }
+  

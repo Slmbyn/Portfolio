@@ -1,0 +1,13 @@
+.project-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card.hovered {
+    background: rgba(53, 70, 77, 0.5);
+  }
+  

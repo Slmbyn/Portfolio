@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import { Container, Row, Col, Card } from 'react-bootstrap'; // Import react-bootstrap components
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import Navbar from '@/components/Navbar';
 import Projects from '@/components/Projects';
 
@@ -24,7 +24,7 @@ export default function Home() {
       {/* Header Section */}
       <Navbar />
 
-      <Container className="bg-light my-5">
+      <Container className="bg-light my-5" id='landing'>
         <Row>
           <Col md={6}>
             <Image src="/headshot.png" alt="My Headshot" width={200} height={200} />
@@ -37,14 +37,14 @@ export default function Home() {
       </Container>
 
       {/* About Me Section */}
-      <Container className="bg-light my-5" id="about">
+      <Container className="bg-light my-5 text-center" id="about">
         <Row>
-          <Col md={6}>
+          {/* <Col md={6}> */}
             <h2>About Me:</h2>
             <p>
               I'm a methodically-minded software engineer and options trader, with an aptitude for efficient processes and function. My experiences prior to entering the software engineering field have helped me enhance my skills in detail-oriented work, process development, and rapid learning in fast-paced environments. My goal as a software engineer is to leverage my experiences alongside my technical expertise to support a team with a shared commitment to fostering positive community impact.
             </p>
-          </Col>
+          {/* </Col> */}
         </Row>
       </Container>
 
@@ -60,6 +60,8 @@ export default function Home() {
               <li>CSS</li>
               <li>SQL</li>
             </ul>
+          </Col>
+          <Col>
             <h4>Frameworks/Libraries:</h4>
             <ul>
               <li>React</li>
@@ -74,10 +76,10 @@ export default function Home() {
 
       {/* Projects Section */}
       <Container className="bg-light py-5" id="projects">
-
-
+        <span className='text-center'>
+          <h1 className=' mb-4'>Projects</h1>
+        </span>
         <Projects />
-
       </Container>
 
       {/* Contact Me Section */}

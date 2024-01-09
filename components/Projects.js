@@ -1,11 +1,14 @@
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import React, {useState} from 'react';
+import '../styles/Project.module.css'
 
 {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" /> */}
 
 
 export default function Projects() {
+    const [isHovered, setIsHovered] = useState(false)
     const projectInfo = [
         { title: 'StratTester', description: 'A web application that helps stock traders test and analyze data from various trading strategies.', imageSrc: '/strattester.png', github: 'https://github.com/Slmbyn/Snake' },
         { title: 'PushStart', description: 'PushStart is a full-stack CRUD application that seamlessly connects car buyers & sellers.', imageSrc: '/strattester.png', github: 'https://github.com/Slmbyn/Snake' },
@@ -16,7 +19,11 @@ export default function Projects() {
     <Row xs={1} md={2} className="g-4">
       {projectInfo.map((card, idx) => (
         <Col key={idx}>
-          <Card>
+          <Card
+            className={`project-card ${isHovered ? 'hovered' : ''}`}
+            onMouseOver={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
             <Card.Img variant="top" src={card.imageSrc} />
             <Card.Body>
               <Card.Title>{card.title}</Card.Title>

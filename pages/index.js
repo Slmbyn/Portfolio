@@ -92,7 +92,43 @@ export default function Home() {
               </Card>
             </a>
 
-            {/* Another Project Card */}
+            {/* PushStart */}
+            <a
+              href="https://github.com/Slmbyn/StratTester"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card mx-auto card-hover"
+              style={{ maxWidth: '400px' }}>            
+              <Card className="mx-auto card-hover" style={{ maxWidth: '400px' }}>
+                <Card.Img variant="top" src="/strattester.png" alt="Project Pic" />
+                <Card.Body>
+                  <Card.Title>Strat-tester</Card.Title>
+                  <Card.Text>
+                    Tech Stack: Django, React, React-Bootstrap
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </a>
+
+            {/* Fit-Forecast */}
+            <a
+              href="https://github.com/Slmbyn/StratTester"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card mx-auto card-hover"
+              style={{ maxWidth: '400px' }}>            
+              <Card className="mx-auto card-hover" style={{ maxWidth: '400px' }}>
+                <Card.Img variant="top" src="/strattester.png" alt="Project Pic" />
+                <Card.Body>
+                  <Card.Title>Strat-tester</Card.Title>
+                  <Card.Text>
+                    Tech Stack: Django, React, React-Bootstrap
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </a>
+            
+            {/* Snake */}
             <a
               href="https://github.com/Slmbyn/StratTester"
               target="_blank"

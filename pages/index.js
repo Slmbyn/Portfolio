@@ -24,20 +24,22 @@ export default function Home() {
       {/* Header Section */}
       <Navbar />
 
-      <Container className="bg-light my-5" id='landing'>
+      <Container className="bg-dark text-light my-5" id='landing'>
         <Row>
-          <Col md={6}>
+          {/* <Col md={6}>
             <Image src="/headshot.png" alt="My Headshot" width={200} height={200} />
-          </Col>
-          <Col md={6}>
+          </Col> */}
+          {/* <Col md={6}> */}
+          <span className='text-center'>
             <h1>Selam Beyene</h1>
             <h3>Full Stack Software Engineer</h3>
-          </Col>
+          </span>
+          {/* </Col> */}
         </Row>
       </Container>
 
       {/* About Me Section */}
-      <Container className="bg-light my-5 text-center" id="about">
+      <Container className="bg-dark text-light my-5 text-center" id="about">
         <Row>
           {/* <Col md={6}> */}
             <h2>About Me:</h2>
@@ -48,7 +50,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container className="bg-light my-5" id="skills">
+      <Container className="bg-dark text-light my-5" id="skills">
         <Row>
           <Col>
             <h2>Skills:</h2>
@@ -75,7 +77,7 @@ export default function Home() {
       </Container>
 
       {/* Projects Section */}
-      <Container className="bg-light py-5" id="projects">
+      <Container className="bg-dark text-light py-5" id="projects">
         <span className='text-center'>
           <h1 className=' mb-4'>Projects</h1>
         </span>

@@ -4,10 +4,10 @@
   
   .project-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
   }
   
   .project-card.hovered {
-    background: rgba(231, 7, 7, 0.923);
+    background: rgba(0, 0, 0, 0.923);
   }
   

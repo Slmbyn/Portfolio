@@ -4,21 +4,21 @@
 3. global pseudo selectors (like :root)
 4. class selectors for all components to use
  */
-/* 
+
  #__next {
   background: linear-gradient(45deg, #000000, #333333, #666666);
   background-size: 400% 400%;
-  animation: gradientAnimation 3s ease-in-out infinite;
+  /* animation: gradientAnimation 3s ease-in-out infinite; */
 }
 
-@keyframes gradientAnimation {
+/* @keyframes gradientAnimation {
   0% {
     background-position: 0% 0%;
   }
   100% {
     background-position: 100% 100%;
   }
-} */
+}  */
 
 
 

@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import Navbar from '@/components/Navbar';
 import Projects from '@/components/Projects';
-import BackgroundAnimation from '@/components/BackgroundAnimation';
+// import BackgroundAnimation from '@/components/BackgroundAnimation';
+import styles from '../styles/BackgroundAnimation.module.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <BackgroundAnimation />
+      {/* <BackgroundAnimation /> */}
 
       {/* Header Section */}
       <Navbar />
@@ -34,7 +35,7 @@ export default function Home() {
           </Col> */}
           {/* <Col md={6}> */}
           <span className='text-center'>
-            <h1>Selam Beyene</h1>
+            <h1 className={`text-center ${styles['animated-heading']}`}>Selam Beyene</h1>
             <h3>Full Stack Software Engineer</h3>
           </span>
           {/* </Col> */}

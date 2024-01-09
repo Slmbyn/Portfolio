@@ -10,9 +10,10 @@ const BackgroundAnimation = () => {
     const rate = 60;
     const arc = 100;
     let time = 0;
-    const size = 7;
+    const size = 4;
     const speed = 20;
-    const colors = ['red', '#f57900', 'yellow', '#ce5c00', '#5c3566'];
+    const colors = ['#333333', '#555555', '#777777', '#999999', '#CCCCCC'];
+
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -38,8 +39,8 @@ const BackgroundAnimation = () => {
         const scaleFactor = Math.max(Math.min(15, 10), 1);
 
         // Apply easing to particle movement before drawing
-        li.x = easeInOut(li.x, li.x + li.toX * (time * 0.02), 0.05);
-        li.y = easeInOut(li.y, li.y + li.toY * (time * 0.02), 0.05);
+        li.x = easeInOut(li.x, li.x + li.toX * (time * 0.06), 0.05);
+        li.y = easeInOut(li.y, li.y + li.toY * (time * 0.06), 0.05);
 
         ctx.beginPath();
         ctx.arc(li.x, li.y, li.size * scaleFactor, 0, Math.PI * 2, false);

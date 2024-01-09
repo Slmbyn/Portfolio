@@ -1,16 +1,25 @@
-/* BackgroundAnimation.module.css */
+/* styles/animations.module.css */
+.animated-heading {
+  font-size: 150px;
+  color: rgba(225, 225, 225, .1);
+  background-image: url("https://s31.postimg.cc/yaze1agjv/abstract-background-canvas-249798.jpg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animate 15s linear infinite;
+  text-align: center;
+  /* margin-top: 17%; */
+  text-transform: uppercase;
+  font-weight: 900;
+}
 
-html, body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+@keyframes animate {
+  0% {
+    background-position: left 0px top 10px;
   }
-  
-  :global(canvas) {
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
+  40% {
+    background-position: left 800px top 10px;
   }
-  
+}

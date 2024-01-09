@@ -1,10 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import { Container, Row, Col, Card } from 'react-bootstrap'; // Import react-bootstrap components
+import Navbar from '@/components/Navbar';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -17,89 +18,109 @@ export default function Home() {
       </Head>
 
       {/* Header Section */}
-      <header className="bg-primary text-white text-center py-5">
-        <h1>Selam&apos;s Portfolio</h1>
-      </header>
+      <Navbar />
+
+      <Container className="bg-light my-5">
+        <Row>
+          <Col md={6}>
+            <Image src="/headshot.png" alt="My Headshot" width={200} height={200} />
+          </Col>
+          <Col md={6}>
+            <h1>Selam Beyene</h1>
+            <h3>Full Stack Software Engineer</h3>
+          </Col>
+        </Row>
+      </Container>
 
       {/* About Me Section */}
-      <section className="container my-5">
+      <Container className="bg-light my-5" id="about">
+        <Row>
+          <Col md={6}>
             <h2>About Me:</h2>
-        <div className="row">
-          <div className="col-md-6">
-            <Image
-              src="/headshot.png"
-              alt="My Headshot"
-              width={200}
-              height={200}
-            />
-          </div>
-          <div className="col-md-6">
             <p>
-              Im a methodically-minded software engineer and options trader, with an aptitude for efficient processes and function. My experiences prior to entering the software engineering field have helped me enhance my skills in detail-oriented work, process development, and rapid learning in fast-paced environments. My goal as a software engineer is to leverage my experiences alongside my technical expertise to support a team with a shared commitment to fostering positive community impact.
+              I'm a methodically-minded software engineer and options trader, with an aptitude for efficient processes and function. My experiences prior to entering the software engineering field have helped me enhance my skills in detail-oriented work, process development, and rapid learning in fast-paced environments. My goal as a software engineer is to leverage my experiences alongside my technical expertise to support a team with a shared commitment to fostering positive community impact.
             </p>
-          </div>
-        </div>
-      </section>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className="bg-light my-5" id="skills">
+        <Row>
+          <Col>
+            <h2>Skills:</h2>
+            <h4>Languages:</h4>
+            <ul>
+              <li>Python</li>
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SQL</li>
+            </ul>
+            <h4>Frameworks/Libraries:</h4>
+            <ul>
+              <li>React</li>
+              <li>Django</li>
+              <li>Mongoose</li>
+              <li>Node.js</li>
+              <li>Next.js</li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
 
       {/* Projects Section */}
-      <section className="bg-light container py-5">
-        <h2>Projects:</h2>
-        {/* STRATTESTER CARD */}
-        <a
-          href="https://github.com/Slmbyn/StratTester"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card mx-auto card-hover"
-          style={{ maxWidth: '400px' }}
-        >
-                    <Image
-            src="/strattester.png"
-            alt="Project Pic"
-            className="card-img-top"
-            width={200}
-            height={200}
-            layout="responsive"
-            objectFit="cover"
-          />
-          <div className="card-body">
-            <h5 className="card-title">Strat-tester</h5>
-            <p className="card-text">
-              Tech Stack: Django, React, React-Bootstrap
-            </p>
-          </div>
-        </a>
+      <Container className="bg-light py-5" id="projects">
+        <Row>
+          <Col>
+            <h2>Projects:</h2>
 
-        {/*  CARD */}
-        <a
-          href="https://github.com/Slmbyn/StratTester"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card mx-auto card-hover"
-          style={{ maxWidth: '400px' }}
-        >
-                    <Image
-            src="/strattester.png"
-            alt="Project Pic"
-            className="card-img-top"
-            width={200}
-            height={200}
-            layout="responsive"
-            objectFit="cover"
-          />
-          <div className="card-body">
-            <h5 className="card-title">Strat-tester</h5>
-            <p className="card-text">
-              Tech Stack: Django, React, React-Bootstrap
-            </p>
-          </div>
-        </a>
-      </section>
+            {/* STRATTESTER CARD */}
+            <a
+              href="https://github.com/Slmbyn/StratTester"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card mx-auto card-hover"
+              style={{ maxWidth: '400px' }}>            
+              <Card className="mx-auto card-hover" style={{ maxWidth: '400px' }}>
+                <Card.Img variant="top" src="/strattester.png" alt="Project Pic" />
+                <Card.Body>
+                  <Card.Title>Strat-tester</Card.Title>
+                  <Card.Text>
+                    Tech Stack: Django, React, React-Bootstrap
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </a>
+
+            {/* Another Project Card */}
+            <a
+              href="https://github.com/Slmbyn/StratTester"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card mx-auto card-hover"
+              style={{ maxWidth: '400px' }}>            
+              <Card className="mx-auto card-hover" style={{ maxWidth: '400px' }}>
+                <Card.Img variant="top" src="/strattester.png" alt="Project Pic" />
+                <Card.Body>
+                  <Card.Title>Strat-tester</Card.Title>
+                  <Card.Text>
+                    Tech Stack: Django, React, React-Bootstrap
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </a>
+
+            
+
+          </Col>
+        </Row>
+      </Container>
 
       {/* Contact Me Section */}
-      <section className="bg-secondary text-white text-center py-5">
+      <Container className="bg-secondary text-white text-center py-5" id="contact">
         <h2>Contact Me:</h2>
         {/* Add your contact form or information here */}
-      </section>
+      </Container>
     </>
   );
 }

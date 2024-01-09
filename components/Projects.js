@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import React, {useState} from 'react';
-import '../styles/Project.module.css'
+import styles from '../styles/Project.module.css'
 
 {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" /> */}
 
@@ -20,7 +20,7 @@ export default function Projects() {
       {projectInfo.map((card, idx) => (
         <Col key={idx}>
           <Card
-            className={`project-card ${isHovered ? 'hovered' : ''}`}
+            className={`${styles['project-card']} ${isHovered ? 'hovered' : ''}`}
             onMouseOver={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >

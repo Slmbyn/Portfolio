@@ -28,8 +28,10 @@ export default function Projects() {
             <Card.Body>
               <Card.Title>{card.title}</Card.Title>
               <Card.Text>{card.description}</Card.Text>
-              <Card.Link href={card.github} target="_blank" >Github</Card.Link>
-              <Card.Link href={card.site} target="_blank" >Visit Site</Card.Link>
+              <Card.Footer className='text-center bg-dark-subtle'>
+                <Card.Link href={card.github} target="_blank" >Github</Card.Link>
+                <Card.Link href={card.site} target="_blank" >Visit Site</Card.Link>
+              </Card.Footer>
             </Card.Body>
           </Card>
         </Col>

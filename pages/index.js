@@ -63,7 +63,7 @@ export default function Home() {
             <h1 className={`text-center ${styles['animated-heading']}`}>Selam Beyene</h1>
           </Row>
           <Row>
-            <h1 className='text-center text-white'>Full Stack Software Engineer</h1>
+            <h1 className='text-center text-white'>Full-Stack Software Engineer</h1>
           </Row>
           {/* <Row>
             <Image src="/landingpic.png" alt="My Headshot" width={350} height={400} />
@@ -117,6 +117,7 @@ export default function Home() {
               <li>Mongoose</li>
               <li>Node.js</li>
               <li>Next.js</li>
+              <li>Bootstrap</li>
             </ul>
           </Col>
           <Col>

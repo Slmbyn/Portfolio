@@ -43,23 +43,37 @@ export default function Home() {
       </Container>
 
       {/* About Me Section */}
-      <Container className="bg-dark text-light my-5 text-center" id="about">
+      <Container className="bg-dark text-light my-5" id="about">
         <Row>
           {/* <Col md={6}> */}
-            <h2>About Me:</h2>
+            <h2 className='text-center'>About Me</h2>
+            <Col md={6}>
+
+            </Col>
+            <Col md={6}>
             <p>
-              I'm a methodically-minded software engineer and options trader, with an aptitude for efficient processes and function. My experiences prior to entering the software engineering field have helped me enhance my skills in detail-oriented work, process development, and rapid learning in fast-paced environments. My goal as a software engineer is to leverage my experiences alongside my technical expertise to support a team with a shared commitment to fostering positive community impact.
+            Hey there! I'm Selam Beyene, a junior software engineer on a winding journey that started with numbers, zigzagged through day trading, and landed me in the exciting realm of coding. Armed with a finance degree from San Jose State University, I initially set out to empower folks with financial wisdom. But a detour into day trading and a full-stack software engineering bootcamp changed the game.
             </p>
+            <p>
+            Along the way, I taught myself the ropes of UX/UI design and stock trading. College life saw me co-founding a non-profit, supporting the East African diaspora, and kickstarting the Ethiopian & Eritrean Student Conference—because collaboration knows no bounds!
+            </p>
+            <p>
+            Beyond the tech buzz, I'm all about soaking in the vibes of different places and cheering on my beloved Golden State Warriors. Oh, and this year, I proudly claimed victory in my very first fantasy football league!
+            </p>
+            <p>
+            Now, with a bag full of skills and a passion for problem-solving, I'm stoked to dive into software engineering. Let's chat! I bring not just technical prowess but a genuine enthusiasm for creative collaboration. Together, let's craft something truly awesome!
+            </p>
+            </Col>
           {/* </Col> */}
         </Row>
       </Container>
 
-      <Container className="bg-dark text-light my-5" id="skills">
+      <Container className="bg-dark text-light my-5 text-center " id="skills">
         <Row>
+            <h2>Skills</h2>
           <Col>
-            <h2>Skills:</h2>
             <h4>Languages:</h4>
-            <ul>
+            <ul style={{ listStyleType: 'none', padding: 0 }}>
               <li>Python</li>
               <li>Javascript</li>
               <li>HTML</li>
@@ -69,7 +83,7 @@ export default function Home() {
           </Col>
           <Col>
             <h4>Frameworks/Libraries:</h4>
-            <ul>
+            <ul style={{ listStyleType: 'none', padding: 0 }}>
               <li>React</li>
               <li>Django</li>
               <li>Mongoose</li>

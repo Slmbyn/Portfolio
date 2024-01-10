@@ -48,19 +48,28 @@ export default function Home() {
       {/* Header Section */}
       <Navbar />
 
-      <Container className="bg-dark text-light my-5" id='landing'>
+      {/* <Container className="bg-dark text-light my-5" id='landing'> */}
         <Row>
-          <Row>
+          <Row id='landing'>
+            <Col></Col>
+            <Col>
+              <div className="rounded-circle overflow-hidden mx-auto image-container mt-5 ">
+                <Image src="/profilepic.png" alt="My Headshot" layout="fill" className="img-fluid rounded-circle" />
+              </div>
+            </Col>
+            <Col></Col>
+          </Row>
+          <Row className="bg-black text-light my-5">
             <h1 className={`text-center ${styles['animated-heading']}`}>Selam Beyene</h1>
           </Row>
           <Row>
+            <h1 className='text-center text-white'>Full Stack Software Engineer</h1>
+          </Row>
+          {/* <Row>
             <Image src="/landingpic.png" alt="My Headshot" width={350} height={400} />
-          </Row>
-          <Row>
-            <h3 className='text-center'>Full Stack Software Engineer</h3>
-          </Row>
+          </Row> */}
         </Row>
-      </Container>
+      {/* </Container> */}
 
       {/* About Me Section */}
       <Container className="bg-dark text-light my-5" id="about">

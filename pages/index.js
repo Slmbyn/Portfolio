@@ -80,16 +80,16 @@ export default function Home() {
             <Image src="/aboutme.png" alt="My Headshot" layout="responsive" width={350} height={400} />            </Col>
             <Col md={6}>
             <p>
-            Hey there! I'm Selam Beyene, a junior software engineer on a winding journey that started with numbers, zigzagged through day trading, and landed me in the exciting realm of coding. Armed with a finance degree from San Jose State University, I initially set out to empower folks with financial wisdom. But a detour into day trading and a full-stack software engineering bootcamp changed the game.
+            Hey there! I&apos;m Selam Beyene, a junior software engineer on a winding journey that started with numbers, zigzagged through day trading, and landed me in the exciting realm of coding. Armed with a finance degree from San Jose State University, I initially set out to empower folks with financial wisdom. But a detour into day trading and a full-stack software engineering bootcamp changed the game.
             </p>
             <p>
             Along the way, I taught myself the ropes of UX/UI design and stock trading. College life saw me co-founding a non-profit, supporting the East African diaspora, and kickstarting the Ethiopian & Eritrean Student Conference—because collaboration knows no bounds!
             </p>
             <p>
-            Beyond the tech buzz, I'm all about soaking in the vibes of different places and cheering on my beloved Golden State Warriors. Oh, and this year, I proudly claimed victory in my very first fantasy football league!
+            Beyond the tech buzz, I&apos;m all about soaking in the vibes of different places and cheering on my beloved Golden State Warriors. Oh, and this year, I proudly claimed victory in my very first fantasy football league!
             </p>
             <p>
-            Now, with a bag full of skills and a passion for problem-solving, I'm stoked to dive into software engineering. Let's chat! I bring not just technical prowess but a genuine enthusiasm for creative collaboration. Together, let's craft something truly awesome!
+            Now, with a bag full of skills and a passion for problem-solving, I&apos;m stoked to dive into software engineering. Let&apos;s chat! I bring not just technical prowess but a genuine enthusiasm for creative collaboration. Together, let&apos;s craft something truly awesome!
             </p>
             </Col>
           {/* </Col> */}

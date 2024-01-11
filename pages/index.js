@@ -46,7 +46,7 @@ export default function Home() {
       {/* <BackgroundAnimation /> */}
 
       {/* Header Section */}
-      <Navbar />
+      <Navbar githubIcon={githubIcon} />
 
       {/* <Container className="bg-dark text-light my-5" id='landing'> */}
         <Row>

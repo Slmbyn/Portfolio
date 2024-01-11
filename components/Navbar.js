@@ -5,12 +5,23 @@
 
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-export default function CustomNavbar() {
+export default function CustomNavbar( {githubIcon} ) {
   return (
     <Navbar bg="dark" data-bs-theme="dark" sticky="top">
     <Container>
-      <Navbar.Brand as={ScrollLink} to='landing'>Selam Beyene</Navbar.Brand>
+      <Navbar.Brand as={ScrollLink} to='landing'>
+        Selam Beyene
+      </Navbar.Brand>
+        <a href='https://github.com/Slmbyn' rel="noopener noreferrer" target="_blank" style={{ color: 'white', textDecoration: 'none' }}>
+          <FaGithub size={30} />
+        </a>
+        &nbsp;
+        &nbsp;
+        <a href='https://www.linkedin.com/in/selambeyene/' rel="noopener noreferrer" target="_blank" style={{ color: 'white', textDecoration: 'none' }}>
+          <FaLinkedin size={30} />
+        </a>
       <Nav className="ms-auto">
         <Nav.Link as={ScrollLink} to='about'>About</Nav.Link>
         <Nav.Link as={ScrollLink} to='skills'>Skills</Nav.Link>

@@ -7,7 +7,7 @@ import { Nav, Navbar, Container } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-export default function CustomNavbar( {githubIcon} ) {
+export default function CustomNavbar( ) {
   return (
     <Navbar bg="dark" data-bs-theme="dark" sticky="top">
     <Container>

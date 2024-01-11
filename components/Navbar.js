@@ -1,5 +1,5 @@
-// // built in components from next.js
-// // self-referencial links use the Link component
+// built in components from next.js
+// self-referencial links use the Link component
 
 
 

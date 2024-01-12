@@ -14,8 +14,9 @@
 
 
  #__next {
-  background: linear-gradient(45deg, #000000, #333333, #666666);
-  background-size: 400% 400%;
+  /* background: linear-gradient(45deg, #8a8989, #cbe80d, #330ddd);*/
+   background: linear-gradient(45deg, #8a8989, #98ae0a, #330ddd);
+   background-size: 400% 400%;
   /* animation: gradientAnimation 3s ease-in-out infinite; */
 }
 

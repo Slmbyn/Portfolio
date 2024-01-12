@@ -23,3 +23,9 @@
     background-position: left 800px top 10px;
   }
 }
+
+@media (max-width: 768px) {
+  .animated-heading {
+    font-size: 80px; /* Adjust this size based on your preference for mobile */
+  }
+}

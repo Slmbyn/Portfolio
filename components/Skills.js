@@ -29,6 +29,8 @@ export default function Skills() {
     ];
 
     return (
+        <>
+            <h2>Programming Skills</h2>
         <Row xs={1} md={3}>
             <Col>
                 <h2>Languages</h2>
@@ -55,5 +57,6 @@ export default function Skills() {
                 ))}
             </Col>
         </Row>
+        </>
     );
 }

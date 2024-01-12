@@ -77,18 +77,11 @@ export default function Home() {
       </Container>
 
       <Container className="bg-dark text-light my-5 text-center " id="skills">
-        <Row>
-            <h2>Programming Skills</h2>
             <Skills />
-          
-        </Row>
       </Container>
 
       {/* Projects Section */}
       <Container className="bg-dark text-light py-5" id="projects">
-        <span className='text-center'>
-          <h1 className=' mb-4'>Projects</h1>
-        </span>
         <Projects />
       </Container>
 

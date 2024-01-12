@@ -16,26 +16,31 @@ export default function Projects() {
         { title: 'Snake', description: 'Snake, the timeless arcade game, is back! In snake, players control a snake with never ending hunger as it navigates through a field in search of food!', imageSrc: '/snake.png', github: 'https://github.com/Slmbyn/Snake', site:'https://snake-gilt-eta.vercel.app/' },
       ];
   return (
-    <Row xs={1} md={2} className="g-4">
-      {projectInfo.map((card, idx) => (
-        <Col key={idx}>
-          <Card
-            className={`${styles['project-card']} ${isHovered ? 'hovered' : ''}`}
-            onMouseOver={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <Card.Img variant="top" src={card.imageSrc} />
-            <Card.Body>
-              <Card.Title>{card.title}</Card.Title>
-              <Card.Text>{card.description}</Card.Text>
-              <Card.Footer className='text-center bg-dark-subtle'>
-                <Card.Link href={card.github} target="_blank" >Github</Card.Link>
-                <Card.Link href={card.site} target="_blank" >Visit Site</Card.Link>
-              </Card.Footer>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
+    <>
+      <span className='text-center'>
+        <h1 className=' mb-4'>Projects</h1>
+      </span>
+      <Row xs={1} md={2} className="g-4">
+        {projectInfo.map((card, idx) => (
+          <Col key={idx}>
+            <Card
+              className={`${styles['project-card']} ${isHovered ? 'hovered' : ''}`}
+              onMouseOver={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <Card.Img variant="top" src={card.imageSrc} />
+              <Card.Body>
+                <Card.Title>{card.title}</Card.Title>
+                <Card.Text>{card.description}</Card.Text>
+                <Card.Footer className='text-center bg-dark-subtle'>
+                  <Card.Link href={card.github} target="_blank" >Github</Card.Link>
+                  <Card.Link href={card.site} target="_blank" >Visit Site</Card.Link>
+                </Card.Footer>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </>
   );
 }

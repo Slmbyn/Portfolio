@@ -35,7 +35,7 @@ export default function Home() {
             <Col></Col>
             <Col>
               <div className="rounded-circle overflow-hidden mx-auto image-container mt-5 ">
-                <Image src="/profilepic.png" alt="My Headshot" layout="fill" className="img-fluid rounded-circle" />
+                <Image src="/cartoons/profilepic.png" alt="My Headshot" layout="fill" className="img-fluid rounded-circle" />
               </div>
             </Col>
             <Col></Col>

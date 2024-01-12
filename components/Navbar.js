@@ -18,7 +18,7 @@ export default function CustomNavbar() {
             <Nav.Link as={ScrollLink} to='about'>About</Nav.Link>
             <Nav.Link as={ScrollLink} to='skills'>Skills</Nav.Link>
             <Nav.Link as={ScrollLink} to='projects'>Projects</Nav.Link>
-            <Nav.Link as={ScrollLink} to='contact'>Contact Me</Nav.Link>
+            {/* <Nav.Link as={ScrollLink} to='contact'>Contact Me</Nav.Link> */}
           </Nav>
           <Nav>
             <a href='https://github.com/Slmbyn' rel="noopener noreferrer" target="_blank" className="nav-link" style={{ color: 'white', textDecoration: 'none' }}>

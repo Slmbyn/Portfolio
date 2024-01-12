@@ -30,9 +30,9 @@ export default function Skills() {
 
     return (
         <>
-            <h2>Programming Skills</h2>
+        <h2>Programming Skills</h2>
         <Row xs={1} md={3}>
-            <Col>
+            <Col md={6}>
                 <h2>Languages</h2>
                 {languages.map((language, idx) => (
                     <span key={idx}>
@@ -40,7 +40,7 @@ export default function Skills() {
                     </span>
                 ))}
             </Col>
-            <Col>
+            <Col md={6}>
                 <h2>Frameworks</h2>
                 {frameworks.map((framework, idx) => (
                     <span key={idx}>
@@ -48,14 +48,14 @@ export default function Skills() {
                     </span>
                 ))}
             </Col>
-            <Col>
+            {/* <Col>
                 <h2>Tools</h2>
                 {tools.map((tool, idx) => (
                     <span key={idx}>
                         <div>{tool.icon} {tool.name}</div>
                     </span>
                 ))}
-            </Col>
+            </Col> */}
         </Row>
         </>
     );

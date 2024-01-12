@@ -53,7 +53,7 @@ export default function Home() {
       {/* </Container> */}
 
       {/* About Me Section */}
-      <Container className="bg-dark text-light my-5" id="about">
+      <Container className="bg-dark text-light my-5 rounded" id="about">
         <Row>
           <AboutMe />
           {/* <Col md={6}> */}
@@ -78,20 +78,20 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container className="bg-dark text-light my-5 text-center " id="skills">
+      <Container className="bg-dark text-light my-5  text-center rounded" id="skills">
             <Skills />
       </Container>
 
       {/* Projects Section */}
-      <Container className="bg-dark text-light py-5" id="projects">
+      <Container className="bg-dark text-light py-5 rounded" id="projects">
         <Projects />
       </Container>
 
       {/* Contact Me Section */}
-      <Container className="bg-secondary text-white text-center py-5" id="contact">
-        <h2>Contact Me:</h2>
+      {/* <Container className="bg-secondary text-white text-center py-5" id="contact"> */}
+        {/* <h2>Contact Me:</h2> */}
         {/* Add your contact form or information here */}
-      </Container>
+      {/* </Container> */}
     </>
   );
 }

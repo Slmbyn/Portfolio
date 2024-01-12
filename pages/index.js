@@ -8,6 +8,7 @@ import Projects from '@/components/Projects';
 // import BackgroundAnimation from '@/components/BackgroundAnimation';
 import styles from '../styles/BackgroundAnimation.module.css';
 import Skills from '@/components/Skills';
+import AboutMe from '@/components/AboutMe';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -54,8 +55,9 @@ export default function Home() {
       {/* About Me Section */}
       <Container className="bg-dark text-light my-5" id="about">
         <Row>
+          <AboutMe />
           {/* <Col md={6}> */}
-            <h2 className='text-center'>About Me</h2>
+            {/* <h2 className='text-center'>About Me</h2>
             <Col md={6}>
             <Image src="/aboutme.png" alt="My Headshot" layout="responsive" width={350} height={400} />            </Col>
             <Col md={6}>
@@ -71,7 +73,7 @@ export default function Home() {
             <p>
             Now, with a bag full of skills and a passion for problem-solving, I&apos;m stoked to dive into software engineering. Let&apos;s chat! I bring not just technical prowess but a genuine enthusiasm for creative collaboration. Together, let&apos;s craft something truly awesome!
             </p>
-            </Col>
+            </Col> */}
           {/* </Col> */}
         </Row>
       </Container>

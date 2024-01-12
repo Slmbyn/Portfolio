@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 import Projects from '@/components/Projects';
 // import BackgroundAnimation from '@/components/BackgroundAnimation';
 import styles from '../styles/BackgroundAnimation.module.css';
+import Skills from '@/components/Skills';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -78,34 +79,8 @@ export default function Home() {
       <Container className="bg-dark text-light my-5 text-center " id="skills">
         <Row>
             <h2>Programming Skills</h2>
-          <Col>
-            <h4>Languages:</h4>
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-              <li>Python</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SQL</li>
-            </ul>
-          </Col>
-          <Col>
-            <h4>Frameworks/Libraries:</h4>
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-              <li>React</li>
-              <li>Django</li>
-              <li>Mongoose</li>
-              <li>Node.js</li>
-              <li>Next.js</li>
-              <li>Bootstrap</li>
-            </ul>
-          </Col>
-          <Col>
-            <h4>Tools:</h4>
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-              <li>Miro</li>
-              <li>Figma</li>
-            </ul>
-          </Col>
+            <Skills />
+          
         </Row>
       </Container>
 

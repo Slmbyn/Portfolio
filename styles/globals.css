@@ -6,17 +6,16 @@
  */
 
  .image-container {
-  width: 200px; /* Adjust this value according to your needs */
-  height: 200px; /* Adjust this value according to your needs */
+  width: 200px;
+  height: 200px;
   position: relative;
 }
 
 
 
  #__next {
-  /* background: linear-gradient(45deg, #8a8989, #cbe80d, #330ddd);*/
-   background: linear-gradient(45deg, #8a8989, #98ae0a, #330ddd);
-   background-size: 400% 400%;
+   /* background: linear-gradient(45deg, #8a8989, #98ae0a, #330ddd); */
+   background-image: linear-gradient(to right top, #112423, #253436, #3a4549, #51575b, #67696c, #67696c, #67696c, #67696c, #51575b, #3a4549, #253436, #112423);
   /* animation: gradientAnimation 3s ease-in-out infinite; */
 }
 

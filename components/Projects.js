@@ -22,7 +22,7 @@ export default function Projects() {
       </span>
       <Row xs={1} md={2} className="g-4">
         {projectInfo.map((card, idx) => (
-          <Col key={idx} className="mb-5">
+          <Col key={idx} className="mb-3">
             {/* <span className="mb-5"> */}
             <Card
               className={`${styles['project-card']} ${isHovered ? 'hovered' : ''}`}

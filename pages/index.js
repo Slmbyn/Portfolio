@@ -78,12 +78,12 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container className="bg-dark text-light my-5 text-center rounded" id="skills">
+      <Container className="bg-dark text-light my-5 py-3 text-center rounded" id="skills">
             <Skills />
       </Container>
 
       {/* Projects Section */}
-      <Container className="bg-dark text-light py-5 rounded" id="projects">
+      <Container className="bg-dark text-light py-3 px-5 rounded " id="projects">
         <Projects />
       </Container>
 

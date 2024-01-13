@@ -31,7 +31,7 @@ export default function Skills() {
     return (
         <>
         <h2>Programming Skills</h2>
-        <Row xs={1} md={3}>
+        <Row xs={2} md={2}>
             <Col md={6}>
                 <h2>Languages</h2>
                 {languages.map((language, idx) => (

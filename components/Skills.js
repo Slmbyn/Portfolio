@@ -3,7 +3,8 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io";
 import { DiPostgresql } from "react-icons/di";
-import { SiDjango, SiMiro, SiNextdotjs } from "react-icons/si";
+import { SiDjango, SiMiro, SiNextdotjs, SiExpress, SiMongodb } from "react-icons/si";
+import { BiCoinStack } from "react-icons/bi";
 import { Row, Col } from "react-bootstrap";
 
 export default function Skills() {
@@ -12,7 +13,7 @@ export default function Skills() {
         { name: 'JavaScript', icon: <IoLogoJavascript /> },
         { name: 'HTML', icon: <TiHtml5 /> },
         { name: 'CSS', icon: <IoLogoCss3 /> },
-        { name: 'SQL', icon: <DiPostgresql /> },
+        { name: 'SQL', icon: <BiCoinStack /> },
     ];
 
     const frameworks = [
@@ -20,6 +21,9 @@ export default function Skills() {
         { name: 'Django', icon: <SiDjango /> },
         { name: 'Next.js', icon: <SiNextdotjs /> },
         { name: 'Node.js', icon: <FaNodeJs /> },
+        { name: 'Express', icon: <SiExpress /> },
+        { name: 'MongoDB', icon: <SiMongodb /> },
+        { name: 'PostgreSQL', icon: <DiPostgresql /> },
         { name: 'Bootstrap', icon: <FaBootstrap /> },
     ];
 

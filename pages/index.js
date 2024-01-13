@@ -53,7 +53,7 @@ export default function Home() {
       {/* </Container> */}
 
       {/* About Me Section */}
-      <Container className="bg-dark text-light my-5 rounded" id="about">
+      <Container className="bg-dark text-light my-5 rounded" style={{ maxWidth: '1000px' }} id="about">
         <Row>
           <AboutMe />
           {/* <Col md={6}> */}
@@ -78,7 +78,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container className="bg-dark text-light my-5  text-center rounded" id="skills">
+      <Container className="bg-dark text-light my-5 text-center rounded" id="skills">
             <Skills />
       </Container>
 

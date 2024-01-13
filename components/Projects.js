@@ -22,7 +22,8 @@ export default function Projects() {
       </span>
       <Row xs={1} md={2} className="g-4">
         {projectInfo.map((card, idx) => (
-          <Col key={idx}>
+          <Col key={idx} className="mb-5">
+            {/* <span className="mb-5"> */}
             <Card
               className={`${styles['project-card']} ${isHovered ? 'hovered' : ''}`}
               onMouseOver={() => setIsHovered(true)}
@@ -38,6 +39,7 @@ export default function Projects() {
                 </Card.Footer>
               </Card.Body>
             </Card>
+            {/* </span> */}
           </Col>
         ))}
       </Row>

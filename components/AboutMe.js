@@ -18,7 +18,7 @@ export default function AboutMe() {
                     />
             </Row>
             <Row>
-            <Carousel.Caption className='text-center' style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(0, 0, 0, 1)', padding: '20px' }}>
+            <Carousel.Caption className='text-center' style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(0, 0, 0, 1)', padding: '20px', maxHeight: '50vh', overflowY: 'auto', height: '100%' }}>
                 {/* <span>
                 <div className='bg-black px-2 py-2 df'> */}
                     <h3>About Me</h3>
